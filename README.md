@@ -1,8 +1,28 @@
-# Repeated list of numbers:
-
-1. Consider an array of n integers
-2. Add the elements which are repeating within that list of array.
-3. Output the repeated elements in a list/set
-4. Example,
-    a = {1, 2, 5, 3, 2, 4, 7, 3, 3, 5};
-    Repeated elements = {2, 3, 5}
+import java.util.*;
+public class Repeatingnumbers{
+    public static void main(String[] args){
+    Scanner sc = new Scanner(System.in);
+    
+    System.out.print("Enter the size of array : ");
+    int size = sc.nextInt();
+    System.out.println(size);
+    System.out.println("Enter the elements of array");
+    int array[] = new int[size];
+    
+    for(int i=0;i<array.length;i++)
+    {
+        array[i] = sc.nextInt();
+        System.out.println(array[i]);
+    }
+    System.out.println("The repeated elements are :");
+    for(int i=0;i<array.length;i++){
+        for(int j=i+1;j<array.length;j++){
+            if(array[i] == array[j])
+           
+            System.out.print(array[j]+",");
+        }
+    }
+    
+    
+}  
+}
