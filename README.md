@@ -1,6 +1,7 @@
-#Count the no. of repeated elements
+# Uppercase the alphabets
 
-Ex.
-5 1 2 10 5 2 10 10 5 10
+1. Input the array of string elements
+2. Uppercase the elements of array and print
+3. Ex.  input = {"abcd", "pqrst", "xyz"};
+        output = {"ABCD", "PQRST", "XYZ"};
 
-Output - {2=1, 5=2, 10=3}
